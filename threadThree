@@ -1,0 +1,73 @@
+import java.util.Random;
+
+
+ 
+public class threadThree implements Runnable
+{				// Insertion class
+  String name;
+  
+int time = 999;
+  
+Random r = new Random ();
+  
+ 
+public threadThree (String x)
+  {
+    
+name = x;
+    
+time = r.nextInt (999);
+  
+} 
+ 
+public void run ()
+  {
+    
+try
+    {
+      
+//      insertion.sort();  //FIX ME
+	Thread.sleep (time);
+    
+} catch (Exception e)
+    {
+} 
+} 
+ 
+ 
+} 
+
+// Public Class threadFour implements Runnable // Bubble sort class
+  
+ 
+String name;
+
+int time = 999;
+
+Random r = new Random ();
+
+ 
+public threadFour (String x)
+{
+  
+name = x;
+  
+time = r.nextInt (999);
+
+} 
+ 
+public void
+
+run ()
+{
+  
+try
+  {
+    
+// bubble sort method call
+      Thread.sleep (time);
+  
+} catch (Exception e)
+  {
+} 
+} 
